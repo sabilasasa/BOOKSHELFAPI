@@ -5,6 +5,7 @@
   "description": "Bookshelf API Project",
   "main": "src/server.js",
   "scripts": {
+    "start-prod": "NODE_ENV=production node ./src/server.js",
     "start": "node src/server.js"
   },
   "keywords": [],

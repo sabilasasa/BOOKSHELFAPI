@@ -3,7 +3,7 @@ import routes from './routes.js';
 
 const server = Hapi.server({
   port: 9000,
-  host: 'localhost',
+  host: proccess.env.NODE_ENV !== 'production' ? 'localhost': '0.0.0.0',
 });
 
 const init = async () => {
